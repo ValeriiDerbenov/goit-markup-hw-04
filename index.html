@@ -17,7 +17,7 @@
             <nav class="navigation">
                 <a href="./index.html" class="header-logo link">Web<span class="header-logo-studio">Studio</span></a>
                 <ul class="nav-menu list">               
-                    <li><a class="nav-menu-studio link" href="./index.html">Studio</a></li>
+                    <li><a class="nav-menu-studio link current" href="./index.html">Studio</a></li>
                     <li><a class="nav-menu-studio link" href="./portfolio.html">Portfolio</a></li>
                     <li><a class="nav-menu-studio link" href="">Contacts</a></li>
                 </ul>
@@ -31,41 +31,51 @@
         </div>
     </header>   
     <main>
+        <!-- hero section -->
         <section class="section-studio-first">
             <div class="container">
                 <h1 class="webstudio-title">Effective Solutions for Your Business</h1>
-                <button class="order-service" type="button">Order Service</button>
+                <button class="order-service" data-modal-open type="button">Order Service</button>
             </div>
         </section>
+        <!-- second section -->
         <section class="section-studio-second">
             <div class="container">
                 <h2 class="visually-hidden">WebStudio principles</h2>
                 <ul class="section-studio-list list">
                     <li class="section-studio-list-element">
-                        <svg class="studio-list-images">
-                            <use href="./images/icons.svg#icon-antenna" width="64"></use>
-                        </svg>
+                        <div class="studio-image-box">
+                            <svg class="studio-list-images" width="64">
+                                <use href="./images/icons.svg#icon-antenna"></use>
+                            </svg>
+                        </div>
                         <h3 class="section-studio-list-item">Strategy</h3>
                         <p class="section-studio-list-text">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
                     </li>
                     <li class="section-studio-list-element">
-                        <svg class="studio-list-images">
-                            <use href="./images/icons.svg#icon-clock" width="64"></use>
-                        </svg>
+                        <div class="studio-image-box">
+                            <svg class="studio-list-images icon" width="64">
+                                <use href="./images/icons.svg#icon-clock"></use>
+                            </svg>
+                        </div>
                         <h3 class="section-studio-list-item">Punctuality</h3>
                         <p class="section-studio-list-text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
                     </li>
                     <li class="section-studio-list-element">
-                        <svg class="studio-list-images">
-                            <use href="./images/icons.svg#icon-diagram" width="64"></use>
-                        </svg>
+                        <div class="studio-image-box">
+                            <svg class="studio-list-images icon" width="64">
+                                <use href="./images/icons.svg#icon-diagram"></use>
+                            </svg>
+                        </div>
                         <h3 class="section-studio-list-item">Diligence</h3>
                         <p class="section-studio-list-text">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
                     </li>
                     <li class="section-studio-list-element">
-                        <svg class="studio-list-images">
-                            <use href="./images/icons.svg#icon-astronaut" width="64"></use>
-                        </svg>
+                        <div class="studio-image-box">
+                            <svg class="studio-list-images icon" width="64">
+                                <use href="./images/icons.svg#icon-astronaut"></use>
+                            </svg>
+                        </div>
                         <h3 class="section-studio-list-item">Technologies</h3>
                         <p class="section-studio-list-text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
                     </li>
@@ -99,28 +109,36 @@
                         <div class="team-name-position">
                             <h3 class="section-studio-list-name">Mark Guerrero</h3>
                             <p class="section-studio-list-position">Product Designer</p>
-                            <div class="social-links">
-                                <a href="https://www.instagram.com/" target="_blank" class="link">
-                                    <svg class="social-links-item">
-                                        <use href="./images/icons.svg#icon-instagram" width="16"></use>
-                                    </svg>
-                                </a>
-                                <a href="https://www.twitter.com/" target="_blank" class="link">
-                                    <svg class="social-links-item">
-                                        <use href="./images/icons.svg#icon-twitter" width="16"></use>
-                                    </svg>
-                                </a>
-                                <a href="https://www.facebook.com/" target="_blank" class="link">
-                                    <svg class="social-links-item">
-                                        <use href="./images/icons.svg#icon-facebook" width="16"></use>
-                                    </svg>
-                                </a>
-                                <a href="https://www.linkedin.com/" target="_blank" class="link">
-                                    <svg class="social-links-item">
-                                        <use href="./images/icons.svg#icon-linkedin" width="16"></use>
-                                    </svg>
-                                </a>
-                            </div>
+                            <ul class="social-links">
+                                <li class="social-links-item">
+                                    <a href="https://www.instagram.com/" target="_blank" class="social-links-btn link">
+                                        <svg>
+                                            <use href="./images/icons.svg#icon-instagram" width="16"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-links-item">
+                                    <a href="https://www.twitter.com/" target="_blank" class="social-links-btn link">
+                                        <svg>
+                                            <use href="./images/icons.svg#icon-twitter" width="16"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-links-item">
+                                    <a href="https://www.facebook.com/" target="_blank" class="social-links-btn link">
+                                        <svg>
+                                            <use href="./images/icons.svg#icon-facebook" width="16"></use>
+                                        </svg>
+                                    </a>
+                                </li">
+                                <li class="social-links-item">
+                                    <a href="https://www.linkedin.com/" target="_blank" class="social-links-btn link">
+                                        <svg>
+                                            <use href="./images/icons.svg#icon-linkedin" width="16"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </li>
                     <li class="section-studio-list-box">
@@ -128,28 +146,36 @@
                         <div class="team-name-position">
                             <h3 class="section-studio-list-name">Tom Ford</h3>
                             <p class="section-studio-list-position">Frontend Developer</p>
-                            <div class="social-links">
-                                <a href="https://www.instagram.com/" target="_blank" class="link">
-                                    <svg class="social-links-item">
-                                        <use href="./images/icons.svg#icon-instagram" width="16"></use>
-                                    </svg>
-                                </a>
-                                <a href="https://www.twitter.com/" target="_blank" class="link">
-                                    <svg class="social-links-item">
-                                        <use href="./images/icons.svg#icon-twitter" width="16"></use>
-                                    </svg>
-                                </a>
-                                <a href="https://www.facebook.com/" target="_blank" class="link">
-                                    <svg class="social-links-item">
-                                        <use href="./images/icons.svg#icon-facebook" width="16"></use>
-                                    </svg>
-                                </a>
-                                <a href="https://www.linkedin.com/" target="_blank" class="link">
-                                    <svg class="social-links-item">
-                                        <use href="./images/icons.svg#icon-linkedin" width="16"></use>
-                                    </svg>
-                                </a>
-                            </div>
+                            <ul class="social-links">
+                                <li class="social-links-item">
+                                    <a href="https://www.instagram.com/" target="_blank" class="social-links-btn link">
+                                        <svg>
+                                            <use href="./images/icons.svg#icon-instagram" width="16"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-links-item">
+                                    <a href="https://www.twitter.com/" target="_blank" class="social-links-btn link">
+                                        <svg>
+                                            <use href="./images/icons.svg#icon-twitter" width="16"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-links-item">
+                                    <a href="https://www.facebook.com/" target="_blank" class="social-links-btn link">
+                                        <svg>
+                                            <use href="./images/icons.svg#icon-facebook" width="16"></use>
+                                        </svg>
+                                    </a>
+                                </li">
+                                <li class="social-links-item">
+                                    <a href="https://www.linkedin.com/" target="_blank" class="social-links-btn link">
+                                        <svg>
+                                            <use href="./images/icons.svg#icon-linkedin" width="16"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </li>
                     <li class="section-studio-list-box">
@@ -158,30 +184,30 @@
                             <h3 class="section-studio-list-name">Camila Garcia</h3>
                             <p class="section-studio-list-position">Marketing</p>
                             <ul class="social-links">
-                                <li>
-                                    <a href="https://www.instagram.com/" target="_blank" class="link">
-                                        <svg class="social-links-item">
-                                            <use href="./images/icons.svg#icon-instagram" width="16" fill="none"></use>
+                                <li class="social-links-item">
+                                    <a href="https://www.instagram.com/" target="_blank" class="social-links-btn link">
+                                        <svg>
+                                            <use href="./images/icons.svg#icon-instagram" width="16"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="https://www.twitter.com/" target="_blank" class="link">
-                                        <svg class="social-links-item">
+                                <li class="social-links-item">
+                                    <a href="https://www.twitter.com/" target="_blank" class="social-links-btn link">
+                                        <svg>
                                             <use href="./images/icons.svg#icon-twitter" width="16"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="https://www.facebook.com/" target="_blank" class="link">
-                                        <svg class="social-links-item">
+                                <li class="social-links-item">
+                                    <a href="https://www.facebook.com/" target="_blank" class="social-links-btn link">
+                                        <svg>
                                             <use href="./images/icons.svg#icon-facebook" width="16"></use>
                                         </svg>
                                     </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/" target="_blank" class="link">
-                                        <svg class="social-links-item">
+                                </li">
+                                <li class="social-links-item">
+                                    <a href="https://www.linkedin.com/" target="_blank" class="social-links-btn link">
+                                        <svg>
                                             <use href="./images/icons.svg#icon-linkedin" width="16"></use>
                                         </svg>
                                     </a>
@@ -197,7 +223,7 @@
                             <ul class="social-links">
                                 <li class="social-links-item">
                                     <a href="https://www.instagram.com/" target="_blank" class="social-links-btn link">
-                                        <svg">
+                                        <svg>
                                             <use href="./images/icons.svg#icon-instagram" width="16"></use>
                                         </svg>
                                     </a>
@@ -208,15 +234,15 @@
                                             <use href="./images/icons.svg#icon-twitter" width="16"></use>
                                         </svg>
                                     </a>
-                                </li class="social-links-item">
-                                <li>
+                                </li>
+                                <li class="social-links-item">
                                     <a href="https://www.facebook.com/" target="_blank" class="social-links-btn link">
                                         <svg>
                                             <use href="./images/icons.svg#icon-facebook" width="16"></use>
                                         </svg>
                                     </a>
-                                </li class="social-links-item">
-                                <li>
+                                </li">
+                                <li class="social-links-item">
                                     <a href="https://www.linkedin.com/" target="_blank" class="social-links-btn link">
                                         <svg>
                                             <use href="./images/icons.svg#icon-linkedin" width="16"></use>
@@ -234,34 +260,46 @@
                 <h2 class="section-studio-title">Customers</h2>
                 <ul class="customers-list">
                     <li class="customers-list-item">
-                        <svg class="costomers-logo" width="104" height="56">
-                            <use href="./images/icons.svg#icon-logo-client-1"></use>
-                        </svg>
+                        <a href="" class="client-link">
+                            <svg class="costomers-logo" width="104" height="56">
+                                <use href="./images/icons.svg#icon-logo-client-1"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="customers-list-item">
-                        <svg class="costomers-logo" width="104" height="56">
-                            <use href="./images/icons.svg#icon-logo-client-2"></use>
-                        </svg>
+                        <a href="" class="client-link">
+                            <svg class="costomers-logo" width="104" height="56">
+                                <use href="./images/icons.svg#icon-logo-client-2"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="customers-list-item">
-                        <svg class="costomers-logo" width="104" height="56">
-                            <use href="./images/icons.svg#icon-logo-client-3"></use>
-                        </svg>
+                        <a href="" class="client-link">
+                            <svg class="costomers-logo" width="104" height="56">
+                                <use href="./images/icons.svg#icon-logo-client-3"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="customers-list-item">
-                        <svg class="costomers-logo" width="104" height="56">
-                            <use href="./images/icons.svg#icon-logo-client-4"></use>
-                        </svg>  
+                        <a href="" class="client-link">
+                            <svg class="costomers-logo" width="104" height="56">
+                                <use href="./images/icons.svg#icon-logo-client-4"></use>
+                            </svg>  
+                        </a>
                     </li>           
                     <li class="customers-list-item">
-                        <svg class="costomers-logo" width="104" height="56">
-                            <use href="./images/icons.svg#icon-logo-client-5"></use>
-                        </svg>  
+                        <a href="" class="client-link">
+                            <svg class="costomers-logo" width="104" height="56">
+                                <use href="./images/icons.svg#icon-logo-client-5"></use>
+                            </svg>  
+                        </a>
                     </li>               
                     <li class="customers-list-item">
-                        <svg class="costomers-logo" width="104" height="56">
-                            <use href="./images/icons.svg#icon-logo-client-6"></use>
-                        </svg>
+                        <a href="" class="client-link">
+                            <svg class="costomers-logo" width="104" height="56">
+                                <use href="./images/icons.svg#icon-logo-client-6"></use>
+                            </svg>
+                        </a>
                     </li>                 
 
                 </ul>
@@ -276,19 +314,52 @@
                     <a href="./index.html" class="footer-logo link">Web<span class="footer-logo-studio">Studio</span></a>
                 <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
                 </div> 
-                <ul class="footer-social-list">
-                    <li>
-                        <a href="https://www.instagram.com/" target="_blank" class="social-links-btn link">
-                            <svg class="footer-links-btn">
-                                <use href="./images/icons.svg#icon-instagram" width="24"></use>
-                            </svg>
-                        </a> 
-                    </li>
-                </ul>
+                <div class="footer-second-box">
+                    <p class="footer-box-text">Social media</p>
+                    <ul class="footer-social-list">
+                        <li class="footer-social-item">
+                            <a href="https://www.instagram.com/" target="_blank" class="social-links-btn link">
+                                <svg class="footer-links-btn" width="24" height="24" class="icon">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a> 
+                        </li>
+                        <li class="footer-social-item">
+                            <a href="https://www.twitter.com/" target="_blank" class="social-links-btn link">
+                                <svg class="footer-links-btn" width="24" height="24" class="icon">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a> 
+                        </li>
+                        <li class="footer-social-item">
+                            <a href="https://www.ifacebook.com/" target="_blank" class="social-links-btn link">
+                                <svg class="footer-links-btn" width="24" height="24" class="icon">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a> 
+                        </li>
+                        <li class="footer-social-item">
+                            <a href="https://www.linkedin.com/" target="_blank" class="social-links-btn link">
+                                <svg class="footer-links-btn" width="24" height="24" class="icon">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a> 
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        
+        </div>        
     </footer>
-
+<!-- modal window -->
+    <div class="backdrop is-hidden" data-modal>
+        <div data-modal class="modal">
+            <button data-modal-close class="modal-button" type="button">
+                <svg class="icon" width="8">
+                    <use href="images/icons.svg#icon-close-black"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
