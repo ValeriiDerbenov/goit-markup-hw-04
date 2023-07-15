@@ -318,6 +318,7 @@ header {
     line-height: 1.17;
     color: var(--primary-brand-color);  
     margin-bottom: 16px;
+    box-sizing: border-box;
 }
 .footer-logo-studio {
     color: var(--cloud);
@@ -327,6 +328,27 @@ header {
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
+}
+.footer-wrap {
+    display: flex;
+    align-items: center;	
+}
+.footer-part-first {
+    margin-right: 120px;
+}
+.footer-social-list {
+    
+}
+.footer-links-btn {
+    position: relative;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: var(--primary-brand-color);
+    align-self: flex-end;
 }
 /* portfolio */
 .portfolio-main {
