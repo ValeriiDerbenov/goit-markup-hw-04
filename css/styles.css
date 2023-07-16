@@ -71,7 +71,7 @@ address {
     overflow: hidden;
     }
 .icon {
-    fill: none;
+    fill: currentColor;
 }
 /* header */
 header {
@@ -609,7 +609,8 @@ header {
 .modal-button:hover,
 .modal-button:focus {
     border: none;
-    color: var(--primary-white-color);
+    color: #ffffff;
+    fill: #ffffff;
     background-color: var(--pressed-state-color);
 }
 .modal-button .icon {
@@ -618,5 +619,5 @@ header {
 }
 .modal-button .icon:focus,
 .modal-button .icon:hover {
-    fill: var(--primary-white-color);
+    fill: #ffffff;
 }
