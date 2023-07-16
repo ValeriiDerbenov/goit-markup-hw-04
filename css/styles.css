@@ -360,7 +360,7 @@ header {
     color: var(--helper-text-color);
 }
 .section-studio-fifth .icon {     
-    fill: var(--helper-text-color);  
+    fill: currentColor; 
 }
 .customers-list .client-link:hover,
 .customers-list .client-link:focus {
@@ -611,7 +611,7 @@ header {
 .modal-button:hover,
 .modal-button:focus {
     border: none;
-    color: #ffffff;
+    /* color: #ffffff; */
     background-color: var(--pressed-state-color);
 }
 .modal-button .icon {
