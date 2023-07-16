@@ -377,14 +377,11 @@ header {
 .footer {
     background-color: var(--primary-black-color);
     padding: 100px 0;
-}
-.footer-box {
-    display: flex;
-    align-items: baseline;	
+    
 }
 .footer-common-box {
     display: flex;
-    align-items: baseline;	
+    align-items: baseline;
 }
 .footer-logo {
     display: inline-block;
