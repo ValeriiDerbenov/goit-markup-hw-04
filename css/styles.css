@@ -332,10 +332,10 @@ header {
 
 /* customers section */
 .section-studio-fifth .icon {     
-    fill: currentColor;  
+    fill: var(--cloud);  
 }
 .section-studio-fifth .icon:hover {     
-    fill: currentColor;  
+    fill: var(--cloud);  
 }
 .customers-list {
     display: flex;
@@ -379,6 +379,10 @@ header {
     padding: 100px 0;
 }
 .footer-box {
+    display: flex;
+    align-items: baseline;	
+}
+.footer-common-box {
     display: flex;
     align-items: baseline;	
 }
@@ -426,7 +430,6 @@ header {
 }
 .section-studio-list-box .social-links-btn:hover,
 .section-studio-list-box .social-links-btn:focus {
-    /* background-color: #31d0aa; */
     background-color: #404bbf;
 }
 .footer-social-item .social-links-btn:hover,
@@ -434,7 +437,7 @@ header {
     background-color: #31d0aa;
 }
 .footer-social-list .icon {
-    fill: currentColor;
+    fill: var(--cloud);
 }
 .footer-links-btn {
     fill: var(--cloud);
@@ -467,6 +470,7 @@ header {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-button-item {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
     font-family: var(--primary-font);
     background-color: var(--cloud);
@@ -540,23 +544,8 @@ header {
     position: relative;
     overflow: hidden;
 }
-.overlay {
-    display: inline-block;
-    padding: 8px;
-    background-color: var(--primary-brand-color);
-    color: var(--primary-white-color);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: translateY(100%);
-    transition: transform 250ms ease-in-out;
-    }
-.portfolio-job-projects-item:hover .overlay {
-    transform: translateY(0);
-}
-.portfolio-job-projects-item:hover .overlay-text {
+.portfolio-job-projects-item .portfolio-card-link:hover .overlay-text,
+.portfolio-job-projects-item .portfolio-card-link:focus .overlay-text {
     transform: translateY(0);
 }
 .overlay-text {
@@ -622,7 +611,6 @@ header {
 }
 .modal-button:hover,
 .modal-button:focus {
-    fill: #ffffff;
     border: none;
     color: var(--primary-white-color);
     background-color: var(--pressed-state-color);
@@ -633,5 +621,5 @@ header {
 }
 .modal-button .icon:focus,
 .modal-button .icon:hover {
-    fill: #ffffff;
+    fill: var(--primary-white-color);
 }
