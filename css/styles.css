@@ -79,11 +79,12 @@ header {
     margin: 0;
     list-style-type: none;   
     border-bottom: 1px solid var(--primary-accent-color);
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 .header .container {
     display: flex;
-    padding-left: 15;  
-    padding-right: 15;
+    padding-left: 15px;  
+    padding-right: 15px;
     align-items: center;
 }
 .navigation {
@@ -120,7 +121,6 @@ header {
     line-height: 1.5;
     color: var(--primary-black-color);
     padding: 24px 0;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,18 +137,18 @@ header {
     left: 0;
     bottom: -1px;
     content: "";
-    width: 48px;
+    width: 100%;
     height: 4px;
     background-color: #404bbf;
     border-radius: 2px;
 }
-.current-portfolio::after {
+.nav-menu-studio:hover:after {
     margin-top: 20px;
     position: absolute;
     left: 0;
     bottom: -1px;
     content: "";
-    width: 66px;
+    width: 100%;
     height: 4px;
     background-color: #404bbf;
     border-radius: 2px;
@@ -164,6 +164,7 @@ header {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--body-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 .address-menu-list-item:hover,
 .address-menu-list-item:focus {
@@ -298,7 +299,7 @@ header {
     background-color: var(--primary-white-color);
 }
 .team-name-position {
-    padding: 32px 16px;
+    padding: 32px 0;
 }
 .social-links {
     display: flex;
@@ -328,9 +329,7 @@ header {
 .section-studio-fourth .icon {
     fill: var(--cloud);
 }
-.footer-social-item .icon {
-    fill: var(--cloud);
-}
+
 /* customers section */
 .section-studio-fifth .icon {     
     fill: currentColor;  
@@ -365,11 +364,11 @@ header {
 }
 .customers-list .client-link:hover,
 .customers-list .client-link:focus {
-    fill: var(--pressed-state-color); 
+    fill: #404bbf; 
     border: 1px solid #404bbf;
 }
 .section-studio-fifth .icon:hover {     
-    fill: var(--pressed-state-color);  
+    fill: #404bbf;  
 }
 
 
@@ -377,6 +376,10 @@ header {
 .footer {
     background-color: var(--primary-black-color);
     padding: 100px 0;
+}
+.footer-wrap {
+    display: flex;
+    align-items: baseline;	
 }
 .footer-logo {
     display: inline-block;
@@ -399,10 +402,7 @@ header {
     letter-spacing: 0.02em;
     max-width: 264px;
 }
-.footer-wrap {
-    display: flex;
-    align-items: center;	
-}
+
 .footer-part-first {
     margin-right: 120px;
 }
@@ -413,8 +413,8 @@ header {
 .social-links-btn {
     border-radius: 50%;
     background-color: var(--primary-brand-color);
-    width: 40px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
     padding: 12px;
     border-radius: 50%;
     justify-content: center;
@@ -425,24 +425,25 @@ header {
 }
 .social-links-btn:hover,
 .social-links-btn:focus {
-    background-color: var(--primary-success-color);
+    background-color: #31d0aa;
 }
 .footer-social-list .icon {
     fill: currentColor;
 }
+.footer-links-btn {
+    fill: var(--cloud);
+}
 .footer-box-text {
-    color: var(--white, #FFF);
+    color: var(--primary-white-color);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 16px;
 }
-.footer-second-box {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    justify-content: center;
-    align-self: baseline;
+.footer-social-item {
+    width: 40px;
+    height: 40px;
 }
 
 /* portfolio */
@@ -456,7 +457,11 @@ header {
     gap: 24px;
     margin-bottom: 72px;
 }
+.portfolio-buttons-list-items {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .portfolio-button-item {
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
     font-family: var(--primary-font);
     background-color: var(--cloud);
     color: var(--primary-brand-color);
@@ -471,16 +476,29 @@ header {
 }
 .portfolio-button-item:hover,
 .portfolio-button-item:focus {
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
     color: var(--primary-white-color);
     background-color: var(--pressed-state-color);
     border: 1px solid transparent;
 }
+.portfolio-card-link {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.portfolio-card-link:hover,
+.portfolio-card-link:focus {
+    transform: translateY(0%);
+}
 .portfolio-job-projects-item {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     display: flex;
     width: calc((100% - 48px)/3);
     border-bottom: 1px solid var(--primary-accent-color);
     width: calc((100% - 48px)/3); 
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);        
+}
+.portfolio-job-projects-item:hover,
+.portfolio-job-projects-item:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .portfolio-job-projects-list {
     display: flex;
@@ -532,7 +550,9 @@ header {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding: 40px 32px 0 32px;
+    padding: 40px 32px;
+    background-color: #4d5ae5;
+    /* transform: translateY(100%); */
     height: 100%;
     width: 100%;
     color: var(--cloud);
@@ -567,9 +587,12 @@ header {
     min-height: 584px;
     border-radius: 4px;
     background: var(--dairy, #FCFCFC);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 }
 .modal-button {
+    padding: 0;
+    cursor: pointer;
     background-color: var(--primary-accent-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     display: flex;
@@ -586,6 +609,7 @@ header {
 }
 .modal-button:hover,
 .modal-button:focus {
+    border: none;
     color: var(--primary-white-color);
     background-color: var(--pressed-state-color);
 }
@@ -595,5 +619,5 @@ header {
 }
 .modal-button .icon:focus,
 .modal-button .icon:hover {
-    fill: var(--primary-white-color);
+    fill: #ffffff;
 }
